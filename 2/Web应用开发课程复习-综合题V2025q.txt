@@ -1,0 +1,232 @@
+《Web 应用开发》 课程 V2025Q
+1
+《Web 应用开发》课程复习（综合题）
+该文档供上海开放大学教学使用，未经同意请勿传播及转载。
+⚫ 考试题型：
+单项选择题（25 题，共 50 分）
+多项选择题（5 题，共 10 分）
+判断题 （15 题，共 30 分）
+综合题（1 题，共 10 分）
+⚫ 综合题题型案例：
+1. 编写一个汽车信息的 JavaBean，取名 CarInfoBean。要求如下：
+ （1）定义一个包，将该 bean 编译后生成的类存入 com.bean 包中；
+ （2）设计三个属性：汽车编号（carNo，字符串型）、 汽车品牌（brand，字符串型）
+及是否通过检验（validate，布尔型）；
+ （3）设计访问属性的相应方法。
+ 请按照 JavaBean 的规范编写程序
+参考答案：
+package com.bean; 
+public class CarBean {
+ private String carNo;
+ private String brand;
+ private int year;
+ private boolean validate;
+ public String getCarNo() { 
+ return carNo;
+ }
+ public void setCarNo(String carNo) {
+ this.carNo = carNo;
+ }
+ public String getBrand() {
+ return brand;
+ }
+ public void setBrand(String brand) {
+ this.brand = brand;
+ }
+ public boolean isValidate() {
+ return validate;
+ }
+ public void setValidate(boolean validate) {
+ this.validate = validate;
+ }
+ public int getYear() {
+ return year;
+ }
+ public void setYear(int year) {
+ this.year = year;
+ }
+}
+2. 编写一个学生体育爱好信息的 JavaBean，取名 Hobby 要求如下：
+（1）定义一个包，将该 bean 编译后生成的类存入 com.bean 包中；
+（2）设计三个属性学生姓名（studentName，String）、体育爱好(hobby, String)和是否
+运动员(sportsman，布尔型)；
+（3）设计访问属性的相应方法。
+《Web 应用开发》 课程 V2025Q
+2
+请按照 JavaBean 的规范编写程序。
+参考答案：
+Hobby.java
+package com.bean; //包名 //给出包及属性定义得 4 分
+public class Hobby {
+ private String studentName; //学生姓名
+ private String hobby; //运动爱好项目
+ private boolean sportsman; //是否运动员 
+ public String getStudentName() { //给出属性的 set、get 方法得 2 分
+ return studentName;
+ }
+ public void setStudentName(String studentName) {
+ this.studentName = studentName;
+ }
+ public String getHobby() { //给出属性的 set、get 方法得 2 分
+ return hobby;
+ }
+ public void setHobby(String hobby) {
+ this.hobby = hobby;
+ }
+ public boolean isSportsman() { //给出属性的 set、get 方法得 2 分
+ return sportsman;
+ }
+ public void setSportsman(boolean sportsman) {
+ this.sportsman = sportsman;
+ }
+}
+3. 编写一个 BBS 帖子信息的 JavaBean，取名 Content。要求如下：
+ （1）定义一个包，将该 bean 编译后生成的类存入 com.bean 包中；
+ （2）设计四个属性：发帖用户编号（userid，整数类型），帖子标题（title，字符串
+型）、帖子内容（content，字符串型）和是否已审核（isLegal，布尔型）；
+ （3）设计访问属性的相应方法。
+ 请按照 JavaBean 的规范编写程序。
+参考答案：
+//Content.java
+package com.bean;
+public class Content {
+ private int userid; //用户编号
+ private String title; //BBS 标题
+ private String content; //BBS 内容
+ private boolean isLegal; //是否已审核 
+ public int getUserid() { 
+ return userid;
+ }
+ public void setUserid(int userid) {
+ this.userid = userid;
+ }
+ public String getTitle() {
+ return title;
+ }
+ public void setTitle(String title) {
+ this.title = title;
+ }
+ public String getContent() { 
+ return content;
+ }
+ public void setContent(String content) {
+ this.content = content;
+ }
+ public boolean isLegal() {
+《Web 应用开发》 课程 V2025Q
+3
+ return isLegal;
+ }
+ public void setLegal(boolean isLegal) {
+ this.isLegal = isLegal;
+ }
+}
+4. 编写一个教师信息的 JavaBean，取名 TeacherBean。要求如下：
+ （1）定义一个包，将该 bean 编译后生成的类存入 com.bean 包中；
+ （2）设计属性：工号（id，字符串型）、 姓名（name，字符串型）、年龄（age, 整
+型）及是否全职教师（fulltime，布尔型）；
+ （3）设计访问属性的相应方法。
+ 请按照 JavaBean 的规范编写程序。
+正确答案：
+package com.bean; 
+public class TeacherBean {
+ private String id;
+ private String name;
+ private int age;
+ private boolean fulltime;
+public String getId() {
+ return id;
+}
+public void setId(String id) {
+ this.id = id;
+}
+public String getName() {
+ return name;
+}
+public void setName(String name) {
+ this.name = name;
+}
+public int getAge() {
+ return age;
+}
+public void setAge(int age) {
+ this.age = age;
+}
+public boolean isFulltime() {
+ return fulltime;
+}
+public void setFulltime(boolean fulltime) {
+ this.fulltime = fulltime;
+} 
+ 
+}
+5. 编写一个学校信息的 JavaBean，取名 SchoolBean。要求如下：
+（1）定义一个包，将该 bean 编译后生成的类存入 com.bean 包中；
+（2）设计三个属性学校名称（schoolName，字符串型）、地址（address，字符串型）
+和是否示范学校（demonstrate，布尔型）；
+（3）设计访问属性的相应方法。
+请按照 JavaBean 的规范编写程序。
+《Web 应用开发》 课程 V2025Q
+4
+参考答案：
+SchoolBean.java
+package com.bean;
+public class SchoolBean { //给出包及属性定义得 4 分
+ private String schoolName; //学校名称
+ private String address; //学校地址
+ private boolean demonstrate; //是否示范性学校 
+ public String getSchoolName() { //给出属性的 set、get 方法得 2 分
+ return schoolName;
+ }
+ public void setSchoolName(String schoolName) {
+ this. schoolName = schoolName;
+ }
+ public String getAddress() { //给出属性的 set、get 方法得 2 分
+ return address;
+ }
+ public void setAddress (String address) {
+ this. address = address;
+ }
+ public boolean isDemonstrate () { //给出属性的 set、get 方法得 2 分
+ return demonstrate;
+ }
+ public void setDemonstrate (boolean demonstrate) {
+ this. demonstrate = demonstrate;
+ }
+}
+6. 编写一个学生信息的 JavaBean，取名 StudentBean。要求如下：
+ （1）定义一个包，将该 bean 编译后生成的类存入 com.bean 包中；
+ （2）设计属性：学号（id，字符串型）、 姓名（name，字符串型）、年龄（age,整型）
+及是否在职（havejob，布尔型）；
+ （3）设计访问属性的相应方法。
+ 请按照 JavaBean 的规范编写程序。
+正确答案：
+package com.bean;
+public class StudentBean {
+ private String id;
+ private String name;
+ private int age;
+ private boolean havejob; 
+ public String getName() { return name; }
+ public void setName(String name) { this.name = name; }
+ public int getAge() {
+ return age;
+ }
+《Web 应用开发》 课程 V2025Q
+5
+ public void setAge(int age) {
+ this.age = age;
+ }
+ public String getId() {
+ return id;
+ }
+ public void setId(String id) {
+ this.id = id;
+ }
+ public boolean isHavejob() {
+ return havejob;
+ }
+ public void setHavejob(boolean havejob) {
+ this.havejob = havejob;
+ } 
+}

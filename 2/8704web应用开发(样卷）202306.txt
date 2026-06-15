@@ -1,0 +1,202 @@
+web 应用开发(样卷)
+上海开放大学课程教学专用，未经同意，请勿转发传播。
+客观题
+单项选择题(共 25 题,共 50 分)
+1.下面对于 HTML 的元素描述错误的是：（ ）。
+A、 <!--……-->为注释标记
+B、<a href=＂＂>为链接图像标记
+C、<br>为换行标记
+D、<p>为分段元素
+正确答案：B
+2.下面哪项内容使用 request 对象无法实现？选择是______。 
+A、将页面重定向至 index.jsp 页 B、获取表单提交的信息 
+C、定义属性 D、获取浏览器的版本号
+正确答案：A
+3.下面__________不是 HTML 元素的表示方法?
+A、<元素名>文件或超文本</元素名>
+B、 <元素名 属性名=＂属性值＂>文本或超文本</元素名>
+C、</元素名 属性名=＂属性值＂>
+D、 <元素名>
+正确答案：C
+4.对于标准的 Web 网页，表示响应信息是 HTML 格式的文本文件的定义是：（ ）。
+A、text/css B、text/html C、application/vnd.ms-excel D、application/msword
+正确答案：B
+5.<jsp:useBean id="bean 的名称" scope="bean 的有效范围" class="包名.类名"/>动作标记
+中，scope 的值不可以是______。
+A、page B、request C、session D、response 
+正确答案：D
+6. 用于声明当前页为 error 页？正确的选择是______。
+A、＜%@ page errorPage="true" %＞
+B、＜%@ page info="error" %＞
+C、＜%@ page pageEndcoding="error" %＞
+D、＜%@ page isErrorPage="true" %＞
+正确答案：D
+7.以下哪一项不是 Page 命令中的有效属性？请选择_____________。
+A、import B、export C、errorPage D、session
+正确答案：B
+8.下面引用指令的语法是正确的选项是（ ）。
+A、<%@ include file=＂hello.jsp＂/>
+B、<jsp:include file=＂hello.jsp＂ />
+C、<%@ include file=＂hello.jsp＂ flush=＂true＂ />
+D、<jsp:include file=＂hello.jsp?username=scott＂ />
+正确答案：A
+9.下列有关 session 对象的用途描述合理的是_______。
+A、在页面上输出数据
+B、抛出运行时的异常
+C、在多个程序中保存信息
+D、在用户会话中保持状态和用户认证
+正确答案：D
+10.我们通常使用_____________来获取表单传来的参数。
+A、request.getParameter()
+B、request.getHeader()
+C、request.getServerInfo()
+D、request.getRemoteAddress()
+正确答案：A
+11.以下描述中，哪个是 JSP 内置对象？选择一个正确的结果是______。
+A、config B、init C、object D、servlet
+正确答案：A
+12.out 对象是一个输出流，其输出各种类型数据并换行的方法是______。
+A、out.print( ) B、out.newLine( ) C、out.println( ) D、out.write( )
+正确答案：C
+13.使用动作标记可以在 JSP 页面中得到 Bean 实例的属性值，并将其转换为________类型
+的数据，发送到客户端。
+A、String B、Double C、Object D、Classes
+正确答案：A
+14.在 JSP 页面中使用 <jsp:setProperty name="beanid" property="bean 的属性" value="字
+符串" />格式给 Long类型的 Bean属性赋值，会调用哪个数据类型转换方法？选择是______。
+A、Long.parseLong(String s) B、Integer.parseInt(Stirng s)
+C、Double.parseDouble(String s) D、不确定
+正确答案：A
+15.下列哪个作用范围的 Bean，请求响应完成则该 Bean 即被释放，不同客户的 Bean 互不相
+同。________
+A、application B、request C、page D、session
+正确答案：B
+16.在以下操作中，哪些是与使用 JavaBean 无关的？请选择一个正确的答案是_______。
+A、jsp:include B、jsp:useBean C、jsp:setProperty D、jsp:getProperty
+正确答案：A
+17.对于 Servlet 的描述中______________是错的？
+A、所有支持 JSP 的地方都支持 Servlet
+B、我们一般实例化 Servlet，并编写其 doGet()和 doPost 方法
+C、服务器停止时，将调用 destory()方法
+D、在 Servlet 的生命周期中，每次调用 Servlet 都需要初始化 Servlet 一次
+正确答案：D
+18.如果不希望 JSP 网页支持 Session，应该如何办？ 正确的选择是______。
+A、调用 HttpSession 的 invalidate()方法
+B、<%@ page session="false" >
+C、<%@ page session >
+D、<jsp:useBean id= "user" class= "UserData" scope= "session" />
+正确答案：B
+19.Java servlet 是运行于_________环境中。
+A、服务器端 B、客户端 C、服务器端和客户端 D、浏览器
+正确答案：A
+20.过滤器的实例化和初始化是在所请求的 servlet 实例化和初始化________。
+A、之前 B、之后 C、同时 D、可以指定
+正确答案：A
+21.在 WEB 应用程序的目录结构中，在 WEB-INF 文件夹外的文件是__________。
+A、jsp 文件 B、class 文件 C、jar 文件 D、web.xml 文件
+正确答案：A
+22.EL 表达式在对隐含对象进行查找时最先查找的是______。
+A、session B、page C、application D、cookie
+正确答案：B
+23.下面不是 EL 表达式特点的是______。
+A、访问 JavaBean 属性 B、访问 JSP 作用域 C、任何浏览器都支持 D、可直接进行运算
+正确答案：C
+24.下列哪个接口用于获取关于数据库的结构信息? 请选择_____________。
+A、Statement B、PreparedStatement C、null D、DatabaseMetaData
+正确答案：D
+25.以下关于 EL 和 JSTL 说法错误的是？选择是______。
+A、EL 是一种简洁的数据访问语言
+B、EL 表达式基本形式：${var}
+C、JSTL 的全称是 JavaServer Pages Standard Tag Library
+D、JSTL 只有一个 Core 核心标签库
+正确答案：D
+多项选择题(共 5 题,共 10 分)
+26.以下哪些技术用于开发 Web 客户端？选择是__________。（多选）
+A、JavaScript 技术 B、JDBC 技术 C、JavaBean 技术 D、Ajax 技术
+正确答案：AD。
+27.以下描述中，哪些是作为 JSP 内置对象的作用范围？它们是__________。（多选）
+A、package B、class C、session D、application
+正确答案：CD。
+28.JSP 标记符可以分为三大类，它们是__________。（多选）
+A、表达式 B、指令 C、脚本元素 D、动作
+正确答案：BCD。
+29.以下哪些是 Servlet 编程接口？选择是__________。（多选）
+A、HttpServletRequest
+B、HttpSession
+C、ServletInterface
+D、RequestDispatcher
+正确答案：ABD。
+30. MVC 模式包括哪几个层? 它们是_______。（多选）
+A、模型层 B、管理层 C、视图层 D、控制层
+正确答案：ACD。
+判断题(共 15 题,共 30 分)
+31.jsp:include 动作标记与 include 指令标记包含文件的处理时间和方式不同。（ ）
+正确答案：T。
+32.页面成员方法不可以在页面的 Java 程序片中调用。（ ）
+正确答案：T。
+33. 用户发布 Web 应用程序，必须修改%TOMCAT_HOME%\conf\server.xml 文件。（ ）
+正确答案：T。
+34.JSP 主要的指令有 page，import，include 等三个（ ）
+正确答案：F。
+35.jsp:param 动作标记不能单独使用，必须作为 jsp:include、jsp:forward 标记等的子标记使
+用，并为它们提供参数。（ ）
+正确答案：T。
+36.application 对象对所有用户都是共享的，任何对它的操作都会影响到所有的用户。（ ）
+正确答案：T。
+37.JavaBean 的属性必须声明为 private，方法必须声明为 public 访问类型。（ ）
+正确答案：T。
+38.Javabean 中，对于 boolean 类型的属性，可以使用 is 代替方法名称中的 set 和 get 前缀，
+创建 Bean 必须带有包名。（ ）
+正确答案：T。
+39.一个客户端对 application 对象做出修改后，其他客户端相同的应用都可以看到修改后的
+内容。（）
+正确答案：T。
+40.ResultSet 结果集，每一次 rs 可以看到一行，要在看到下一行，必须使用 next()方法移动
+当前行。（ ）
+正确答案：F。
+41.在 MVC 模式中，因为 Servlet 负责创建 JavaBean，所以 JavaBean 的构造函数可以带有参
+数，除了保留 get 和 set 规则外，还可以有其他功能的函数。（ ）
+正确答案：T。
+42.Connection.createStatement()不带参数创建 Statement 对象，不能够来回的滚动读取结果
+集。（ ）
+正确答案：T。
+43.Servlet 与 Applet 它们都运行在服务器端。( )
+正确答案：F。
+44.url 重写可以把 session 对象的 id 作为 url 参数传带过去，可以使用 request 对象的
+encodeURL(“”)。（ ）
+正确答案：F。
+45.在 Servlet 中读取 HTTP 头信息非常容易，只需调用 HttpServletRequest 的 getHeader 等
+方法即可。（ ）
+正确答案：T。
+综合题(共 1 题,共 10 分)
+46.(10 分)编写一个学校信息的 JavaBean，取名 SchoolBean。要求如下：
+（1）定义一个包，将该 bean 编译后生成的类存入 com.bean 包中；
+（2）设计三个属性学校名称（schoolName，字符串型）、地址（address，字符串型）和是
+否示范学校（demonstrate，布尔型）；
+（3）设计访问属性的相应方法。
+请按照 JavaBean 的规范编写程序。
+参考答案：
+package com.bean;
+public class SchoolBean { //给出包及属性定义
+ private String schoolName; //学校名称
+ private String address; //学校地址
+ private boolean demonstrate; //是否示范性学校 
+ public String getSchoolName() { //给出属性的 set、get 方法
+ return schoolName;
+ }
+ public void setSchoolName(String schoolName) {
+ this. schoolName = schoolName;
+ }
+ public String getAddress() { //给出属性的 set、get 方法
+ return address;
+ }
+ public void setAddress (String address) {
+ this. address = address;
+ }
+ public boolean isDemonstrate () { //给出属性的 set、get 方法
+ return demonstrate;
+ }
+ public void setDemonstrate (boolean demonstrate) {
+ this. demonstrate = demonstrate;
+ }
+}

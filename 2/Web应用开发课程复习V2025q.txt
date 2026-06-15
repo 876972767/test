@@ -1,0 +1,681 @@
+ 《Web 应用开发》课程复习 V2025Q
+1 / 15
+《Web 应用开发》课程选择题
+该文档仅供上海开放大学教学使用，未经同意请勿传播及转载。
+⚫ 考试题型：
+单项选择题（25 题，共 50 分）
+多项选择题（5 题，共 10 分）
+判断题 （15 题，共 30 分）
+综合题（1 题，共 10 分）
+一、单项选择题
+Java Web 相关概念
+1. 以下关于 C/S 与 B/S 模式的描述，正确的是：（ ）。
+ A. C/S 为浏览器与服务器模式
+ B. B/S 为客户端与服务器模式
+ C. C/S 模式的可维护性比 B/S 高
+ D. B/S 模式的可维护性比 C/S 高
+ 答案：D
+2. Java servlet 是运行于_________环境中。
+ A. 服务器端 B. 客户端 C. 服务器端和客户端 D. 浏览器
+3. 下面哪种语言不适用于 web 应用？选择是______。
+ A. ASP B. PHP C. JSP D. C 语言
+4. 下列说法哪一项是正确的？选择是______。
+A. Apache 用于 ASP 技术所开发网站的服务器
+B. IIS 用于 CGI 技术所开发网站的服务器
+C. Tomcat 用于 JSP 技术所开发网站的服务器
+D. WebLogic 用于 PHP 技术所开发网站的服务器
+5. 以下文件名后缀中，哪个不是静态网页的后缀？正确的选择是_______。
+ A. .html B. .htm C. .jsp D. .shtml
+6. Web 应用服务器 Tomcat 的默认端口为______________。
+ A. 80 B. 8080 C. 9090 D. 8090
+7. 在以下选项中，哪个不是开发 JSP 应用程序所必需的？ 正确的选择是_______。
+ A. JDK B. Eclipse C. J2EE SDK D. Web 服务器
+8. HTTP 协议是一种___________的__________层协议。
+ A. 有状态、应用 B. 无状态、应用 C. 有状态、传输 D. 无状态、传输
+9. 以下哪些不属于 Web 容器提供的标准服务？选择是_________。
+ A. 数据库连接 B. 安全服务 C. 网页信息检索 D. 事务支持
+10. 在 WEB 应用程序的目录结构中，在 WEB-INF 文件夹外的文件是__________。
+ A. .jsp 文件 B. .class 文件 C. .jar 文件 D. web.xml 文件
+11. JAVA Web 应用的部署描述文件总是放在 Web 应用的__________目录下。
+A、META-INF B、META-CFG C、WEB-INF D、WEB-CFG
+ 《Web 应用开发》课程复习 V2025Q
+2 / 15
+HTML 标记及 JSP 程序基础
+12. 下面选项中哪一个是有效的字符编码格式？选择是______。（A）
+A、GBK B、GBM C、GBD D、JSP
+13. 给出 HTML 代码<input type=”text” name="foo" size=20>表示以下的哪一种功能？
+选择是______。
+ A. 创建一个单选框
+ B. 创建一个单行文本输入区域
+ C. 创建一个提交按纽
+ D. 创建一个使用图象的提交按纽
+14. 用下面哪一种类型定义可以声明隐藏域? 选择是______。
+A. type="hide" B. type="text" C. type="password" D. type="hidden"
+15. 下面__________不是 HTML 元素的表示方法
+ A. <元素名>文件或超文本</元素名>
+ B. <元素名 属性名=＂属性值＂>文本或超文本</元素名>
+ C. </元素名 属性名=＂属性值＂>
+ D. <元素名>
+16. 下面 HTML 语言及描述中，__________是错误的
+A. <form>为表单标签 B. <input type=＂text＂>为文本框
+C. <br>为换行标签 D. <hr>为段落标签
+17. 对于标准的 Web 网页，通常使用_______表示响应信息是 HTML 格式的文本文件。
+A. text/css B. text/html C. application/vnd.ms-excel D. application/msword
+18. 以下 Form 表单元素描述，__________是对的
+ A. <input type=＂text＂>表示密码框
+ B. <input type=＂submit＂>表示提交按钮
+ C. <select name=＂select＂>表示单选框
+ D. <input type=＂password＂>表示文本框
+19. 能在浏览器的地址栏中看到提交数据的表单提交方式是______。
+ A. submit B. get C. post D. out
+20. 一个典型的 HTTP 请求消息包括请求行、多个请求头和______。
+ A. 状态行 B. 信息体 C. 响应行 D. 响应头
+21. 当多个用户请求同一个 JSP 页面时，Tomcat 服务器为每个客户启动一个______。
+ A. 进程 B. 线程 C. 程序 D. 服务
+22. 下列变量声明在______范围内有效。
+ <%! Date dateTime;
+ int countNum;
+ %>
+A. 从定义开始处有效，客户之间不共享
+B. 在整个页面内有效，客户之间不共享
+C. 在整个页面内有效，被多个客户共享
+D. 从定义开始处有效，被多个客户共享
+23. 可以在以下哪个______标记之间插入变量与方法声明？
+A)< % 和 % > B)< % ！ 和 % > C)< / 和 % > D)< % 和 ! >
+24. 下面对于 HTML 的元素描述错误的是：（ ）。
+A、 <!--……-->为注释标记 B、<a href=＂＂>为链接图像标记
+C、<br>为换行标记 D、<p>为分段元素
+25. 用下面哪一种类型定义可以声明隐藏域?正确的选择是_______。
+A. type="hide" B. type="text" C. type="password" D. type="hidden"
+ 《Web 应用开发》课程复习 V2025Q
+3 / 15
+26. 下面引用指令的语法是正确的选项是（ ）。
+A. <%@ include file="hello.jsp"/>
+B. <jsp:include file="hello.jsp" />
+C. <%@ include file="hello.jsp" flush="true" />
+D. <jsp:include file="hello.jsp?username=scott" />
+正确答案：A
+27. 下面的 JSP 指令，______________是对的？
+A. <jsp:include page="abc.jsp" />
+B. <jsp:include file="abc.jsp" />
+C. <@include file="abc.jsp" flush="true" />
+D. <@include page="abc.jsp" />
+正确答案：A
+28. 可以利用 JSP 动态改变客户端的响应，使用的语法是______。
+A. response.setHeader() B. response.outHeader()
+C. response.writeHeader() D. response.handlerHeader()
+正确答案：A
+JSP 指令/JSP 动作
+29. 可以在以下哪个______标记之间插入 Java 程序片？
+ A. <% 和 %> B. <% 和 /> C. </ 和 %> D. <% 和 !>
+30. JavaBean 可以通过相关 jsp 动作进行调用。下面哪个不是 JavaBean 可以使用的 jsp
+动作指令？选择是______。
+A. <jsp:useBean> B. <jsp:setProperty> C. <jsp:getProperty> D. <jsp:setParameter>
+31. 用于声明当前页为 error 页？正确的选择是______。
+A. ＜%@ page errorPage="true" %＞
+B. ＜%@ page info="error" %＞
+C. ＜%@ page pageEndcoding="error" %＞
+D. ＜%@ page isErrorPage="true" %＞
+32. 以下属性中，哪个不是 jsp:setProperty 操作的属性？正确的选择答案是_________。
+A、name B、param C、property D、scope
+33. <jsp:useBean id="bean 的名称" scope="bean 的有效范围" class="包名.类名"/>动作标
+记中，scope 的值不可以是______。(正确答案：D)
+A、page B、request C、session D、response
+34. 以下哪一项不是 Page 命令中的有效属性？请选择_____________。
+A. import B. export C. errorPage D. session
+正确答案：B
+JSP 内置对象
+Request 对象
+35. 从 HTTP 请求中，获得请求参数，应该调用以下哪个方法？选择是_______。
+ A. request 对象的 getAttribute()方法
+ B. request 对象的 getParameter()方法
+ C. session 对象的 getAttribute()方法
+ D. session 对象的 getParameter()方法
+36. 通常使用_____________来获取表单传来的参数。
+ A. request.getParameter()
+ B. request.getHeader()
+ 《Web 应用开发》课程复习 V2025Q
+4 / 15
+ C. request.getServerInfo()
+ D. request.getRemoteAddress()
+37. 以下哪些方法可以获得会话对象？选择是__________。
+ A. getRequest（true） B. getAttribute（true）
+ C. getResponse（true） D. getSession（true）
+38. JSP 内置对象中，哪个对象封装了用户提交的请求信息？通过调用该对象相应的方
+法可以获取请求的来源、标头、协议、Cookies 以及请求相关参数等信息。选择是
+______。
+ A. out B. application C. session D. request
+39. 以下哪个方法可以获取客户端的变量值？选择是__________。
+ A. HttpServletRequest 的 getParameterValues()方法
+ B. HttpServletResponse 的 getParameterValues()方法
+ C. HttpServletRequest 的 getValues()方法
+ D. HttpServletResponse 的 getValues()方法
+40. 在 JSP 内置对象中， 对象对客户的请求做出响应，向客户端输出信息。
+ A. out B. response C. session D. request
+41. 下面哪项内容使用 request 对象无法实现？选择是______。
+A. 将页面重定向至 index.jsp 页 B. 获取表单提交的信息
+C. 定义属性 D. 获取浏览器的版本号
+42. JSP 内置对象中，哪个对象封装了用户提交的请求信息？通过调用该对象相应的方
+法可以获取请求的来源、标头、协议、Cookies 以及请求相关参数等信息。选择是
+______。
+ A. out B. application C. session D. request
+43. 以下_____________是错误的 JSP 页面的表达方式。
+ A. <%! int a; %>
+ B. <%= ＂Hello＂ %>
+ C. <%= ＂world＂; %>
+ D. <% out.println(＂jsp＂); %>
+ 
+44. 通过以下哪一种对象，可以接收上一页表单提交的信息？正确选择是_______。
+ A. session 对象
+ B. application 对象
+ C. config 对象
+D. request 对象
+45. 在 JSP 页面中，保存数据的范围最小的是：_____________。
+A)pageContext B) request C)application D)session
+ 答案：A
+46. JSP 页面程序片中可以使用下列哪个方法将 strNumx=request.getParamter(“ix”)得
+到的数据类型转换为 Double 类型？选择是______。
+A、Double.parseString(strNumx)
+B、Double.parseDouble(strNumx)
+C、Double.parseInteger(strNumx)
+D、Double.parseFloat(strNumx)
+ 答案：B
+47. 如下选项错误的是： 。
+A.使用 request.getParameter 可以获得由表单提交的数据 
+B.session.getAttribute()方法返回的为一个对象 
+C.使用 application.getInitParameter()将获得当前版本 Servlet 编译器的信息 
+D.可以使用 request.getCookie 获得客户端的 cookie 值。
+ 答案：C
+ 《Web 应用开发》课程复习 V2025Q
+5 / 15
+48. 要从一个 JSP 页面的响应交给另一个 JSP 页面处理，可以使用下列哪个对象？选择
+是_______。
+A. response 对象 B. application 对象 C. config 对象 D. exception 对象
+正确答案：A
+49. 在 JSP 页面中使用 <jsp:setProperty name="beanid" property="bean 的属性" value="
+字符串" /> 格式给 Long 类型的 Bean 属性赋值，会调用哪个数据类型转换方法？选
+择是______。
+A. Long.parseLong(String s) B. Integer.parseInt(Stirng s)
+C. Double.parseDouble(String s) D. 不确定
+正确答案：A
+50. 使用动作标记可以在 JSP 页面中得到 Bean 实例的属性值，并将其转换为
+________类型的数据，发送到客户端。
+A. String B. Double C. Object D. Classes
+正确答案：A
+51. 下列哪个作用范围的 Bean，请求响应完成则该 Bean 即被释放，不同客户的 Bean
+互不相同。________
+A. application B. request C. page D. session
+正确答案：B
+Response 对象
+52. http 请求及响应的正文部分可以是任意格式的数据，要保证接收方能看得懂发送方
+发送的数据，http 协议采用______协议来规范正文的数据格式 ?
+ A. FTP B. TCP C. HTTP D. MIME
+53. 下面哪个方法是设置 MIME 类型? 正确的选择是_______。
+ A. setHeader(String headerName, String headerValue)
+ B. setContentType(String mimeType)
+ C. setContentLength(int length)
+ D. addCookie(Cookie c)
+ E. addHeader（String name,String value）
+54. 下面哪个状态代码表示“Not Found 无法找到指定位置的资源”？ ______。
+ A. 104 B. 201 C. 301 D. 404
+Session 对象
+55. 下面__________的说法是错的
+ A. 使用 request.getParameter 可以获得由表单提交的数据
+ B. session.getAttribute()方法返回的为一个对象
+ C. 使用 application.getInitParameter()将获得当前版本 Servlet 编译器的信息
+ D. 可以使用 request.getCookie 获得客户端的 cookie 值。
+解析：String info=application.getServerInfo(); 将获得当前版本 Servlet 编译器的信息
+56. 下列有关 session 对象的用途描述，哪一种是合理的解释？
+ A. 在页面上输出数据
+ B. 抛出运行时的异常
+ C. 在多个程序中保存信息
+ D. 在多页面请求中保持状态和用户认证
+ 《Web 应用开发》课程复习 V2025Q
+6 / 15
+57. 以下哪个方法可用于检索 session 属性 userid 的值？ 选择是_______。
+ A. session.getAttribute (“userid”);
+ B. session.setAttribute (“userid”);
+ C. request.getParameter (“userid”);
+ D. request.getAttribute (“userid”);
+58. 如果不希望 JSP 网页支持 Session，应该如何办？正确的选择是______。
+ A. 调用 HttpSession 的 invalidate()方法
+ B. <%@ page session= "false" \>
+ C. < %@ page session >
+ D. <jsp:useBean id= "user" class= "UserData" scope= "session" />
+59. 设置 session 的有效时间应使用该对象的什么方法？选择是______。
+ A. setAttribute()方法
+ B. getMaxInactiveInterval()方法
+ C. setMaxInactiveInterval()方法
+ D. setTime()方法
+60. 关于 JSP 的内置对象 session，以下说法正确的是__________。
+A、 绑定到 session 对象上的属性在应用程序的生存周期内总是有效的
+B、使用 session 对象的 addAttribute 方法来添加会话属性
+C、会话属性是特定用户的专用数据，同时访问 Web 应用程序的其他用户无法访问这
+些属性
+D、每个 session 对象有可能对应多个 sessionID
+61. 用什么方法可以从一个 HTTP 会话中获得对象？ 正确的选择是______。
+A. getAttribute method of javax.servlet.Session
+B. getAttribute method of javax.servlet.http.HttpSession
+C. getAttribute method of javax.servlet.http.Session
+D. getAttribute method of javax.servlet.HttpSession
+答案：B
+Cookie 对象
+62. 在 Java Web 开发中，要在服务器端查询 cookie, 要用到 HttpServletRequest 的哪个方法？
+选择是_______。
+ A. session B. getCookies C. addCookie D. getSession
+63. Web 应用中不能在不同用户之间共享数据的方法是_________。
+ A. 使用 cookie B. 使用文件系统 C. 使用数据库 D. 使用 ServletContext 对象
+Application 对象
+64. 在 JSP 页面中，保存数据的范围由小到大依次是_______。
+ A. pageContext,request,application,session
+ B. pageContext,application,session,request
+ C. pageContext,request,session,application
+ D. pageContext,session,request,application
+65. 将 fum 声明为何种类型的对象，可以使 fum 作为一个属性来存储？正确的选择是___。
+A. ServletContext B. HttpServlet C. ServletConfig D. Servlet 
+其它对象（Exception 对象异常处理对象、Confit 对象、out 对象、
+page 对象）
+66. 负责管理“脚本程序的运行环境”的 JSP 内置对象是__________
+ 《Web 应用开发》课程复习 V2025Q
+7 / 15
+A、page B、session C、request D、application
+67. 在 JSP 内置对象中，负责处理 JSP 文件在执行时所发生的错误和异常的对象是______。
+ A. message B. exception C. error D. application
+68. 以下描述中，哪个是 JSP 内置对象？选择一个正确的结果是______。 
+A. config B. init C. object D. servlet
+69. out 对象是一个输出流，其输出不换行的方法是______。
+A. out.print( ) B. out.newLine( ) C. out.println( ) D. out.write( ) 
+JavaBean 内容
+70. 使用动作标记可以在 JSP 页面中获得 Bean 的属性，但必须保证 Bean 有对应的
+________方法。（答案：C）
+71. A、SetXxx 方法 B、setXxx 方法 C、getXxx 方法 D、GetXxx 方法
+72. 以下对 JavaBean 的描述， __________是错的
+ A. JavaBean 是一个公共（public）的类
+ B. JavaBean 类的必须有一个无参数的构造函数。
+ C.获取或者设置类属性的方法必须是 getXXX()或者 setXXX()
+ D. JavaBean 不能封装对数据库的处理
+73. JavaBean 的作用范围可以是 page、request、session 和_____四个作用范围中的一种。
+A. application B. local C. global D. class
+74. 某公司采用了 JSP+Bean 模式来完成某个开发任务。如果采用 TOMCAT 服务器，那么项
+目中的 Java Bean 在发布时应该放在______________目录中。 
+A、WEB-INF B、webapps C、WEB-INF/lib D、WEB-INF/classes 
+75. 使用格式给 Bean 的属性赋值， expression 的数据类型和 bean 的属性类型_____。
+A、必须一致 B、可以不一致 C、必须不同 D、无要求
+76. 关于 JavaBean，下列的叙述哪一项是不正确的？________
+A、JavaBean 的类必须是具体的和公共的，并且具有无参数的构造器
+B、JavaBean 的类属性是私有的，要通过公共方法进行访问
+C、JavaBean 和 Servlet 一样，使用之前必须在项目的 web.xml 中注册
+D、JavaBean 属性和表单控件名称能很好地耦合，得到表单提交的参数
+77. <jsp:useBean> 的 scope 的默认值是__________。
+A. session B. application C. page D. request
+78. JavaBean 的 scope 取什么值可使该 Javabean 被多个用户共享，即和 web 应用有相同的
+生命周期？选择是______。
+A、page B、request C、session D、application
+79. 下面哪个不是 JSP 中和 javabean 相关的标记？选择是______。
+ A. <jsp:userBean> B. <jsp:include>
+ C. <jsp:setProperty> D. <jsp:getProperty>
+80. 下面哪一个选项不属于 http 响应的部分? 选择是______。
+ A. 响应头 B. 响应正文 C. 协议版本号 D. 状态行
+81. 下列哪个是 JSP 动作(Action)? 
+ A. <%page include file="index.html" %>
+ B. <jsp:useBean id="customer" class="test.Customer" />
+ C. <%! String sql="select * from customer" %>
+ D. <% int i=0; %>
+ 《Web 应用开发》课程复习 V2025Q
+8 / 15
+Servlet 应用
+82. 过滤器的实例化和初始化是在所请求的 servlet 实例化和初始化________。
+A. 之前 B. 之后 C. 同时 D. 可以指定
+83. 下列哪一种是 Servlet 处理请求的方式？正确的选择是_______。
+A. 以进程的方式 B. 以线程的方式 C. 以程序的方式 D. 以响应的方式
+84. 以下方法中，哪一个方法不是 HTTPServlet 类的方法？正确的选择是__________。
+A、doGet B、doDelete C、doPost D、doService
+85. 在 Servlet 生命周期中，下列哪个方法是对应服务阶段的方法?选择是_______。
+A. doGet() B. doPost() C. doGet 和 doPost() D. service()
+86. HttpServletRequest 对象的______方法能够获取一个表单参数的值。
+ A. getQueryString() B. getPathInfo() C. getParameter() D. getAttribute()
+87. 所有的 servlet 过滤器类都必须实现哪个接口？选择是______。
+ A. javax.servlet.Filter
+ B. javax.servlet.ServletConfig
+ C. javax.servlet.ServletContext
+ D. javax.servlet.Servlet
+88. 以下哪一个选项中可以获得 Servlet 的初始化参数？正确的选择是_______。
+ A. Servlet B. ServletContext C. ServletConfig D. GenericServlet
+89. 为了获取客户使用的浏览器类型，在Servlet的doGet方法中可以调用HttpServletRequest
+对象的__________方法。
+ A. getBrowserType B. getHeader
+ C. getContentType D. getServerInfo
+90. 关于 JAVA WEB 服务器的 Servlet 容器，正确的理解是_____________。
+A. Servlet 容器是一种数据库，可以存储一些 JSP 页面所需配置信息
+B. Servlet 容器负责分析客户请求的是动态网页还是静态网页
+C. Servlet 容器是 WEB 服务器的一个组件，一般在服务器启动时进行初值化
+D. Servlet 容器是 WEB 应用环境的系统配置文件
+91. Servlet 中，HttpServletResponse 的哪个方法用来把一个 Http 请求重定向到另外的 URL？
+选择是_____。
+A. sendURL() B. redirectURL() C. sendRedirect() D. redirectResponse()
+92. Servlet 可以在以下哪三个不同的作用域存储数据？正确的选择是__________。
+ A. 请求、会话和上下文 B. 响应、会话和上下文
+ C. 请求、响应和会话 D. 请求、响应和上下文
+93. Servlet 可以通过以下哪个接口实现请求转发机制？正确的选择是_______。（B）
+A、HttpServletRequest 接口 B、RequestDispatcher 接口
+C、HttpServletResponse 接口 D、ServletConfig 接口
+94. 一个 servlet 的生命周期不包括______方法？
+A. init()方法
+B. invalidate()方法
+C. service()方法
+D. destroy()方法
+正确答案：B
+95. 对于 Servlet 的描述中______________是错的？
+A. 所有支持 JSP 的地方都支持 Servlet
+B. 我们一般实例化 Servlet，并编写其 doGet()和 doPost 方法
+C. 服务器停止时，将调用 destory()方法
+ 《Web 应用开发》课程复习 V2025Q
+9 / 15
+D. 在 Servlet 的生命周期中，每次调用 Servlet 都需要初始化 Servlet 一次
+正确答案：D
+JDBC 应用
+96. 关于 JDBC 的说法 __________是错误的
+ A. JDBC 是 Java 语言用来访问数据库的 API
+ B. 一般通过 Statement 对象的 executeUpdate（）方法来获得数据集
+ C. JDBC-ODBC 桥是 JDBC 库唯一自带的数据库驱动 driver
+ D. JDBC 支持事务的处理
+97. 下列哪个接口用于获取关于数据库的结构信息（ ）。
+ A. Statement B. PreparedStatement C. null D. DatabaseMetaData 
+98. 关于 JDBC 的说法 __________是错误的
+ A. JDBC 是 Java 语言用来访问数据库的 API
+ B. 一般通过 Statement 对象的 executeUpdate（）方法来获得数据集
+ C. JDBC-ODBC 桥是 JDBC 库唯一自带的数据库驱动 driver
+ D. JDBC 支持事务的处理 
+99. 下面对 jdbc api 描述错误的是______。
+ A. DriverManager 接口的 getConnection()方法可以建立和数据库的连接
+ B. Connection 接口的 createStatement()方法可以创建一个 Statement 对象
+ C. Statement 接口的 executeQuery()方法可以发送 select 语句给数据库
+ D. ResultSet 接口表示执行 insert 语句后得到的结果集
+ 答案：D
+100. JDBC API 提供了_______________接口来对数据库存储过程进行调用？
+A. java.sql.DriverManagger
+B. java.sql.Statement
+C. java.sql.Result
+D. java.sql.CallableStatement
+正确答案：D
+EL/JSTL 应用
+101. 下面不是 EL 表达式特点的是______。
+ A. 访问 JavaBean 属性
+ B. 访问 JSP 作用域
+ C. 任何浏览器都支持
+ D. 可直接进行运算
+102. EL 表达式在对隐含对象进行查找时最先查找的是______。
+ A. session B. page C. application D. cookie
+ 答案：B
+103. 以下关于 EL 和 JSTL 说法错误的是？选择是______。
+ A. EL 是一种简洁的数据访问语言
+ B. EL 表达式基本形式：${var}
+ C. JSTL 的全称是 JavaServer Pages Standard Tag Library
+ D. JSTL 只有一个 Core 核心标签库
+ 答案：D
+框架应用
+104. 以下哪个标签是 struts2 中的用于循环迭代________。
+ A. <s:property> B. <s:iterator> C. <s:logic> D. <s:foreach>
+ 《Web 应用开发》课程复习 V2025Q
+10 / 15
+105. 在 Struts 框架中，用户视图的角色通常是由____________来承担的。
+ A. Action 对象 B. ActionServlet 对象 C. JSP 页面
+ D. JavaBean 对象
+106. Struts2 主要核心功能是由________实现？
+ A. 过滤器 B. 拦截器 C. 类型转换器 D. 配置文件
+107. 以下不属于 Struts2 标签库的是________。
+ A. <s:textfield> B. <s:textarea> C. <s:submit> D. <select>
+108. 关于 struts2 配置文件说法正确的是________。
+ A. 必须在 WEB-INF/classes 目录下
+ B. 名字必须为 struts.xml
+ C. 配置 Action 时，必须配置包信息
+ D. 使用<forward>元素配置转发
+109. 以下属于 struts2 的控制器组件是________。
+ A. Action B. ActionForm C. ActionServlet D. dispatchAction
+110. struts2 默认的处理结果类型是________。
+ A. dispatcher B. redirect C. chain D. 以上说法都不正确
+ 答案：A
+二、多项选择题
+Web 应用基础
+111. 一个完整的 HTTP 事务处理包括以下哪些过程？它们是_______。（多选）
+ A. 连接 TCP/IP 连接
+ B. 客户端发出请求信息
+ C. 设置 MIME 类型
+ D. 服务器响应信息
+ E. 结束连接
+112. . 在以下操作系统中，支持 Java/JSP 的有哪些？它们是________。（多选）
+ A. Windows B. Solaris C. UNIX D. Linux
+113. 以下哪些是属于 Web 容器提供的标准服务？它们是_________。（多选）
+ A. 数据库连接
+ B. 事务支持
+ C. 安全服务
+ D. 网页信息检索
+114. JSP 脚本语法包括以下哪些成分？它们是________。（多选）
+ A. HTML 注释
+ B. HTML 动作标记
+ C. Java 表达式
+ D. XML 语句
+115. 为什么要使用会话管理?主要原因是__________。（多选）
+ A. Web 应用的 HTTP 通信协议是无连接的
+ B. 标识用户跨多个页面的请求
+ C. 方便访问网站，存贮用户有关信息
+ D. 识别跟踪用户会话
+116. 以下哪些可以作为 Web 服务器？它们是_________。（多选）
+ A. MS Mail 服务器
+ B. Tomcat 服务器
+ C. HTTP 服务器
+ D. FTP 服务器
+ 《Web 应用开发》课程复习 V2025Q
+11 / 15
+117. HTTP 应答状态行包括_______。（多选）
+A、HTTP 版本 B、状态代码 C、状态信息 D、查询数据
+正确答案：ABC。
+118. JavaEE 的三层结构包括_______。（多选）
+A.服务层 B.业务层 C.保存层 D.数据层 E.表示层
+参考答案： BDE
+119. 以下哪些技术用于开发 Web 客户端？选择是__________。（多选）
+A. JavaScript 技术 B. JDBC 技术 C. JavaBean 技术 D. Ajax 技术
+正确答案：AD
+120. JSP 的结构由以下哪些成分组成？ 它们是________。（多选）
+A. 指令元素 B. HTML 标签 C. 脚本元素 D. 动作元素
+正确答案：ABCD
+121. JSP 标记符可以分为三大类，它们是__________。（多选）
+A. 表达式 B. 指令 C. 脚本元素 D. 动作
+正确答案：BCD
+122. 以下哪些是 Servlet 编程接口？选择是__________。（多选）
+A. HttpServletRequest B. HttpSession C. ServletInterface D. RequestDispatcher
+正确答案：ABD
+JSP 内置对象
+123. 以下描述中，哪些是 JSP 内置对象？它们是__________。（多选）
+ A. out B. exception C. page D. pageContext
+124. 以下描述中，哪些是作为 JSP 内置对象的作用范围？它们是__________。（多选）
+ A. page B. request C. session D. application
+125. 以下描述中，哪些是作为 JSP 内置对象的作用范围？它们是__________。（多选）
+ A. package B. class C. session D. application
+126. 关于 session 的使用，下列哪些说法是正确的? 它们是_______。（多选）
+ A. 不同的用户窗口具有不同的 session
+ B. 不同的用户窗口具有相同的 session
+ C. session 有可能超时
+ D. session 永远不可能超时
+127. 以下描述中，哪些是 JSP 内置对象？它们是__________。（多选）
+ A. out
+ B. exception
+ C. package
+ D. pageContext
+128. Session 对象那些情况下会失效？正确的选择是________。（多选）
+ A. 客户端浏览器关闭
+ B. Session 的存活周期变为无效
+ C. Session 超时
+ D. 调用了 Session 的 destroy()
+129. 以下描述中，哪些可以作为页面间对象传递的方法？它们是_________。（多选）
+ A. request B. out C. page D. cookie
+130. 以下描述中，哪些是 JSP 内置对象？它们是__________。（多选）
+ 《Web 应用开发》课程复习 V2025Q
+12 / 15
+ A. http B. response C. session D. applet
+131. 以下描述中，哪些是作为 JSP 内置对象的作用范围？它们是__________。（多选）
+ A. class B. request C. session D. package
+132. Cookie 的特性有__________。（多选）
+ A. cookie 有名称/值对
+ B. cookie 保存在客户端
+ C. cookie 中的信息在 HTTP 请求和响应的主体中交换
+ D. cookie 有可以设置的生命周期
+ 答案：ABCD
+133. 以下哪些是隐藏字段的特点？选择是__________。（多选）
+ A. 隐藏字段必须使用表单
+ B. 隐藏字段在浏览器中对用户不直接可见
+ C. 查看网页源代码找出隐藏字段
+ D. 存储在客户端的 HTML 网页
+ 答案：ABCD
+JSP 标记及动作
+134. JSP 标记可以分为哪几种类型__________。（多选）
+ A. 指令 B. 脚本元素 C. 内容 D. 动作
+Servlet 应用
+135. 用 serlvet 实现请求调度时，include 机制和 forward 机制区别在于___。（多选）
+ A. forward 机制，响应信息完全由资源负责
+ B. forward 机制的响应信息合并了资源的输出信息
+ C. forward 机制静态资源返回速度比 include 机制快
+ D. forward 机制静态资源返回速度比 include 机制快慢
+136. sendRedirect 和 Forward 机制的区别主要在于________。（多选）
+ A. sendRedirect 发送状态码给客户端浏览器
+ B. sendRedirect 丢失 HttpServletRequest 对象
+ C. forward 发送请求给其他 Web 资源时，不使用客户端浏览器
+ D. forward 传送 HttpServletRequest 和 HttpServletResponse 对象给其他 Web 资源
+137. servlet API 由多个包组成，主要包括_________。（多选）
+ A. javax.servlet
+ B. javax.servlet.http
+ C. javax.servlet.ServletRequest
+ D. javax.servlet.ServletResponse
+138. servlet 的生命周期由它的 3 个方法来控制，它们是________。（多选）
+ A. init() B. service() C. destroy()
+ D. doGet() E. doPost()
+139. Java 过滤器技术主要用于哪些处理，请选择________。（多选）
+ A. 身份验证功能
+ B. 数据加密功能
+ C. 实现日志功能
+ D. 访问数据库功能
+140. 过滤器的生命周期可用它的 方法表示。（多选）
+ A. init() B. doFilter() C. service() D. destroy()
+141. 创建一个 Filter 需要执行如下操作_______。（多选）
+ A. 创建 Filter 处理类 B. 在应用服务器上部署 Filter Bean
+ C. 在 web.xml 文件中配置 Filter D. 在客户端应用中引用 Filter
+ 《Web 应用开发》课程复习 V2025Q
+13 / 15
+142. 当 Servlet 容器销毁一个 Servlet 时，会销毁哪些对象？ 请选择_______。（多
+选）
+A、Servlet 对象 B、ServletContext 对象
+C、与 Servlet 对象关联的 ServletConfig 对象
+D、ServletRequest 对象和 ServletResponse 对象
+正确答案：AC。
+MVC 设计模式
+143. 以下哪些层属于软件开发领域的三层体系结构中的结构层？它们是_____。（多
+选）
+ A. 网络层 B. 数据链路层 C. 客户层 D. 应用服务层
+144. MVC 模式包括哪几个层? 它们是_______。（多选）
+ A. 模型层 B. 管理层 C. 视图层 D. 控制层
+145. MVC 模式中一般情况 servlet 可以担任哪些角色？ 它们是_________。（多选）
+A、Controller 中接受用户请求
+B、View 中返回响应信息，刷新用户界面
+C、Model 中处理业务逻辑
+D、访问 Model 中的元素
+正确答案：ABC。
+146. 下列哪些说法是正确? 它们是_______。（多选）
+A.JSP 充当 MVC 模式的视图 
+B.Servlet 充当 MVC 模式的模型
+C.Servlet 充当 MVC 模式的控制器
+D.JavaBean 充当 MVC 模式的模型
+E.JSP 充当 MVC 模式中的模型
+参考答案：ACD
+EL、JSTL
+147. 禁用 EL 表达式的方法有__________。（多选）
+ A. 使用斜杠“\”符号
+ B. 使用 page 指令
+ C. 在 web.xml 文件中配置<el-ignored>元素
+ D. 使用异常处理方法
+ 答案：ABC
+框架应用
+148. 自定义拦截器类的方式有________。(多选)
+ A. 实现 Interceptor 接口
+ B. 实现 AbstractInterceptor 接口
+ C. 继承 Interceptor 类
+ D. 继承 AbstractInterceptor 类
+ 答案：AD
+149. 以下属于 struts2 配置文件中的配置元素是________。(多选)
+ A. <package>
+ B. <action>
+ C. <form-beans>
+ D. <action-mappings>
+ 答案：AB
+ 《Web 应用开发》课程复习 V2025Q
+14 / 15
+三 判断题
+判断题-Web 基础
+1. 网站设计的时候经常会处理大量的数据，这些数据必须都放在 JSP 页面中。（ ）F
+2. 动态网页和静态网页的根本区别在于服务器端返回的HTML文件是事先存储好的还
+是由动态网页程序生成的（ ）T
+判断题-HTML 基础
+3. 表单信息的验证只能放在服务器端执行。（ ）F
+4. 绝对路径是文件名的完整路径；相对路径是指相对当前网页文件名的路径。（ ）T
+判断题-JSP 基础、指令及动作
+5. 在Java程序片中可以使用Java语言的注释方法，其注释的内容会发送到客户端。（F）
+6. 网页中只要使用 gb2312 编码就不会出现中文乱码。（ ）F
+7. 在"<%!"和"%>"标记之间声明的 Java 的变量在整个页面内有效，不同的客户之间不
+共享。（ ）T
+8. JSP 页面中的指令标记、JSP 动作标记统称为脚本元素。（ ）F
+9. JSP 页面中的变量和方法声明（Declaration）、表达式（Expression）和 Java 程序片
+（Scriptlet）统称为 JSP 标记。（ ）F
+10. <jsp:forward ...>标记的 page 属性值是相对的 URL 地址，只能静态的 URL。（ ）F
+11. 不可以用一个 page 指令指定多个属性的取值。（ ）F
+12. out 对象是一个输出流，它实现了 javax.servlet.JspWriter 接口，用来向客户端输出数
+据。（ ）T
+13. Page 指令不能定义当前 JSP 程序的全局属性。（ ）F
+判断题-JSP 内置对象
+14. response 对象主要用于向客户端发送数据。（ ）T
+15. Cookie 由浏览器保存在客户端，通常保存为一个文本文件。( ) T
+16. Tomcat 服务器支持直接使用 application 对象。（ ）F
+17. 在 HTML 页面文件中加入 JSP 脚本元素、JSP 标记等就构成了一个 JSP 页面。（ ）
+F
+18. application 对象对所有用户都是共享的，任何对它的操作都会影响到所有的用户。（T）
+19. 利用 response 对象的 sendRedirect 方法只能实现本网站内的页面跳转，但不能传递
+参数。（ ）F
+20. session 对象可以用来保存用户会话期间需要保存的数据信息。（ ）T
+判断题-JavaBean
+21. Javabean 中，对于 boolean 类型的属性，可以使用 is 代替方法名称中的 set 和 get 前
+缀，创建 Bean 必须带有包名。（ ）F
+22. JavaBean 是 Java 类，因此也必须有主函数。（ ）F
+23. JavaBean 分为可视化组件和非可视化组件。（ ）T
+24. 修改了 Bean 的字节码后，要将新的字节码复制到对应的 WEB-INF\classes 目录中，
+重新启动 tomcat 服务器才能生效。（ ）F
+25. 在 JSP 页面中调用的 Bean 类中如果有构造方法，必须是 public 类型且必有参数。（）
+F
+26. 在 JSP 页面中使用 Bean 首先要使用 import 指令将 Bean 引入。（ ）T
+27. 布置 JavaBean 须在 Web 服务目录的 WEB-INF\classes 子目录下建立与包名对应的子
+目录，并将字节文件复制到该目录。（ ）T
+判断题-Servlet
+28. 不能给一个 Servlet 映射多个访问路径。（ ）F
+29. 对于每一个 Servlet 实例，只能被初始化一次（ ）。T
+30. Servlet 与 Applet 它们都运行在服务器端。（ ） F
+31. Servlet 的部署文件是一个 xml 文件，文件名为 web.xml，它保存在 Web 服务目录的
+WEB-INF 子目录中。（ ）T
+32. 当用户请求一个 Servlet 时，服务器都会创建 Servlet 实例，响应用户请求。（ ）F
+33. 当多个客户请求一个 Servlet 时，服务器为每一个客户启动一个进程而不是启动一个
+线程。（ ）F
+34. 客户机与 Servlet 间可以直接的交互。（ ）F
+ 《Web 应用开发》课程复习 V2025Q
+15 / 15
+35. 在 Servlet 中读取 HTTP 头信息非常容易，只需调用 HttpServletRequest 的 getHeader
+等方法即可。（ ）T
+36. 实现转发需要两个步骤，首先在 Servlet 中要得到 RequestDispatcher 对象，然后在调
+用该对象的 forward 方法实现转发。（ ）T
+37. 转发的功能是将用户对当前 JSP 页面或 Servlet 的请求转发给另一个 JSP 页面或
+Servlet。（ ）T
+38. 重定向功能是将用户从当前页面或 Servlet 定向到另一个 JSP 页面或 Servlet。（ ） T
+判断题-JDBC
+39. 数据库服务与 Web 服务器需要在同一台计算机上。（ ）F
+40. Connection.createStatement()不带参数创建 Statement 对象，不能够来回的滚动读取结
+果集。（ ）T
+41. ResultSet 结果集，每一次 rs 可以看到一行记录，要在看到更多行，可以使用 next()
+方法进行前后移动。（ ） F
+42. 使用 CachedRowSetImpl 对象可以节省数据库连接资源，因为这个对象可以保存
+ResultSet 对象中的数据，它不依赖与 Connection 对象，并且继承了 ResultSet 的所有
+方法。（ ）T
